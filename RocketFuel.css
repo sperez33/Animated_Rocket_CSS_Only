@@ -1,13 +1,23 @@
 body {
-	margin: 0;
-	padding: 0;
-	background: #2f2f2f; /* these 3 lines create a grey background and foundation for the page */
+    margin: 0;
+    padding: 0;
+    background: #2f2f2f;
+    /* these 3 lines create a grey background and foundation for the page */
 }
 
 .scene {
-	position: absolute;
-	top: 50%;
-	left: 50%; /* these 3 will place this section at 50% of the x & y cordinates of the screen */
-	transform: translate(-50%,-50%); /* this line ensures that no matter the size of the screen, it'll allways be at the center */
-	
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* these 3 will place this section at 50% of the x & y cordinates of the screen */
+    transform: translate(-50%, -50%);
+    /* this line ensures that no matter the size of the screen, it'll allways be at the center */
+    width: 400px;
+    height: 400px;
+    background: #3b93ff;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    /* overflow: hidden; hides what doesn't fit within the border */
+    /* width - overflow: getting a background and border for this section of code */
 }
