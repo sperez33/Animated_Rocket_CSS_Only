@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #2f2f2f; /* these 3 lines create a grey background and foundation for the page */
+}
+
+.scene {
+	position: absolute;
+	top: 50%;
+	left: 50%; /* these 3 will place this section at 50% of the x & y cordinates of the screen */
+	transform: translate(-50%,-50%); /* this line ensures that no matter the size of the screen, it'll allways be at the center */
+	
+}
