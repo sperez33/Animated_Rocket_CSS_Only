@@ -20,4 +20,18 @@ body {
     overflow: hidden;
     /* overflow: hidden; hides what doesn't fit within the border */
     /* width - overflow: getting a background and border for this section of code */
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    animation: animateScene 5s linear infinite;
+}
+
+.scene:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1;
+    /* this entire block causes half of the inside of the circle to be a little darker. looks shaded. */
 }
