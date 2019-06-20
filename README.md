@@ -1,6 +1,8 @@
 # RSI_Challenge_StephPerez
 A challenge given to me during my internship with RSI
 June 19.2019 - 9:48a - uploaded test file to GitHub
+I pulled this from a tutorial on youtube, I simply added notes as I followed along for a better understanding of the 
+development.
 
 June 19.2019 - 10.25a - Real file uploaded. Icons from FontAwesome were inserted via using classes and 
 linking to the external CSS page to bring the icons into the page. At this stage, they're showing up 
@@ -29,3 +31,7 @@ transform withn a percentage.
 June 20.2019 - 9:29a - added the @keyframes for animateCloud using translateY within transform within a percentage.
 I also added a z-index to .cloud2 to give it depth and make it appear as if the rocket is flying in front of it as 
 it "passes by".
+
+June 20.2019 - 9:41a - added an animation delay for clouds 2 and 3 at -0.8 and -0.4 respectively. I also added an additional
+graphical touch to make the backround change color as the rocket flies using, yet again, the keyframe. @keyframes was
+added the the background within the percentant.

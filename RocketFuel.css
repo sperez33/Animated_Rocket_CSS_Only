@@ -66,13 +66,16 @@ body {
     font-size: 3em;
 	z-index: -1;
 	/* the z-index adds depth to the cloud by pushing it behind the rocket giving a better illusion of flying up */
+	animation-delay: -0.8;
 }
 
 .cloud3 {
     right: 20%;
     font-size: 5em;
+	animation-delay: -0.4;
 }
 /* the 3 blocks above add in the clouds into the circle so they can actually be seen and not hidden */
+/* the animation delay was added to clouds 2 & 3 to create a more natural feel for clouds in nature */
 
 @keyframes animateRocket {
 	0% {
@@ -100,6 +103,22 @@ body {
 	}
 }
 /* this keyframe causes the clouds to move about. */
+
+@keyframes animateScene {
+	0% {
+		background: #b339ff;
+	}
+	30% {
+		background: #3b93ff;
+	}
+	70% {
+		background: #3b93ff;
+	}
+	100% {
+		background: #b339ff;
+	}
+}
+/* this key frame makes the background change color in intervals, similar to a sunset or sunrise. */
 
 
 
