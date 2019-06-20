@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #2f2f2f;
+    /* these 3 lines create a grey background and foundation for the page */
+}
+
+.scene {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* these 3 will place this section at 50% of the x & y cordinates of the screen */
+    transform: translate(-50%, -50%);
+    /* this line ensures that no matter the size of the screen, it'll allways be at the center */
+    width: 400px;
+    height: 400px;
+    background: #3b93ff;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    /* overflow: hidden; hides what doesn't fit within the border */
+    /* width - overflow: getting a background and border for this section of code */
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    animation: animateScene 5s linear infinite;
+}
+
+.scene:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1;
+    /* this entire block causes half of the inside of the circle to be a little darker. looks shaded. */
+}
+
+.fa-rocket {
+    position: absolute;
+    top: 50%;
+    left: 48.9%;
+    /* these place the rocket icon roughly in the center of the circle. */
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /* this adjusts the icon so its pointing directly up since it doesn't do that naturally */
+    color: #fff;
+    font-size: 10em !important;
+    /* you need to add the word important or it will ignore me and listen to FontAwesome.com*/
+    animation: animateRocket .2s linear infinite;
+    text-shadow: -10px 15px 10px rgba(0, 0, 0, .2);
+}
+
+.cloud {
+    position: absolute;
+    color: #ccc;
+    animation: animateCloud 1s linear infinite;
+}
+
+.cloud1 {
+    left: 10%;
+    font-size: 6em;
+}
+
+.cloud2 {
+    left: 45%;
+    font-size: 3em;
+	z-index: -1;
+	/* the z-index adds depth to the cloud by pushing it behind the rocket giving a better illusion of flying up */
+	animation-delay: -0.8;
+}
+
+.cloud3 {
+    right: 20%;
+    font-size: 5em;
+	animation-delay: -0.4;
+}
+/* the 3 blocks above add in the clouds into the circle so they can actually be seen and not hidden */
+/* the animation delay was added to clouds 2 & 3 to create a more natural feel for clouds in nature */
+
+@keyframes animateRocket {
+	0% {
+		transform: translate(-50%,-50%) rotate(-45deg) translate(0,0);
+	}
+	
+	50% {
+		transform: translate(-50%,-50%) rotate(-45deg) translate(-5px,5px);
+		/* under translate, if they're both positive or both negative, it moves horizontally not virtically. */
+	}
+	
+	100% {
+		transform: translate(-50%,-50%) rotate(-45deg) translate(0,0);
+	}
+}
+/* This specific keyframe is what makes the rocket jiggle up and down continuously */
+/* the 0% and 100% are starting and ending points */
+
+@keyframes animateCloud {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(1000%);
+	}
+}
+/* this keyframe causes the clouds to move about. */
+
+@keyframes animateScene {
+	0% {
+		background: #b339ff;
+	}
+	30% {
+		background: #3b93ff;
+	}
+	70% {
+		background: #3b93ff;
+	}
+	100% {
+		background: #b339ff;
+	}
+}
+/* this key frame makes the background change color in intervals, similar to a sunset or sunrise. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
