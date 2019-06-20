@@ -62,8 +62,10 @@ body {
 }
 
 .cloud2 {
-    left: 10%;
-    font-size: 6em;
+    left: 45%;
+    font-size: 3em;
+	z-index: -1;
+	/* the z-index adds depth to the cloud by pushing it behind the rocket giving a better illusion of flying up */
 }
 
 .cloud3 {
@@ -88,6 +90,16 @@ body {
 }
 /* This specific keyframe is what makes the rocket jiggle up and down continuously */
 /* the 0% and 100% are starting and ending points */
+
+@keyframes animateCloud {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(1000%);
+	}
+}
+/* this keyframe causes the clouds to move about. */
 
 
 

@@ -25,3 +25,7 @@ I don't forget.
 June 20.2019 - 9:20a - Added a CSS block for .cloud and .cloud1-3 to ensure they show up within the blue circle. 
 In addition, I added the first @keyframe to make the rocket actually move up and using translate and rotate within
 transform withn a percentage.
+
+June 20.2019 - 9:29a - added the @keyframes for animateCloud using translateY within transform within a percentage.
+I also added a z-index to .cloud2 to give it depth and make it appear as if the rocket is flying in front of it as 
+it "passes by".
