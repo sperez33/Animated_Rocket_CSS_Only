@@ -35,3 +35,72 @@ body {
     z-index: 1;
     /* this entire block causes half of the inside of the circle to be a little darker. looks shaded. */
 }
+
+.fa-rocket {
+    position: absolute;
+    top: 50%;
+    left: 48.9%;
+    /* these place the rocket icon roughly in the center of the circle. */
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /* this adjusts the icon so its pointing directly up since it doesn't do that naturally */
+    color: #fff;
+    font-size: 10em !important;
+    /* you need to add the word important or it will ignore me and listen to FontAwesome.com*/
+    animation: animateRocket .2s linear infinite;
+    text-shadow: -10px 15px 10px rgba(0, 0, 0, .2);
+}
+
+.cloud {
+    position: absolute;
+    color: #ccc;
+    animation: animateCloud 1s linear infinite;
+}
+
+.cloud1 {
+    left: 10%;
+    font-size: 6em;
+}
+
+.cloud2 {
+    left: 10%;
+    font-size: 6em;
+}
+
+.cloud3 {
+    right: 20%;
+    font-size: 5em;
+}
+/* the 3 blocks above add in the clouds into the circle so they can actually be seen and not hidden */
+
+@keyframes animateRocket {
+	0% {
+		transform: translate(-50%,-50%) rotate(-45deg) translate(0,0);
+	}
+	
+	50% {
+		transform: translate(-50%,-50%) rotate(-45deg) translate(-5px,5px);
+		/* under translate, if they're both positive or both negative, it moves horizontally not virtically. */
+	}
+	
+	100% {
+		transform: translate(-50%,-50%) rotate(-45deg) translate(0,0);
+	}
+}
+/* This specific keyframe is what makes the rocket jiggle up and down continuously */
+/* the 0% and 100% are starting and ending points */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
