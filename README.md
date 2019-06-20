@@ -22,6 +22,6 @@ angle, color and size. for the font size, it's important to add !important after
 say animation will be used later when the animation code is written, for now they're just place holders so 
 I don't forget.
 
-June 20.2019 - TIME - Added a CSS block for .cloud and .cloud1-3 to ensure they show up within the blue circle. 
+June 20.2019 - 9:20a - Added a CSS block for .cloud and .cloud1-3 to ensure they show up within the blue circle. 
 In addition, I added the first @keyframe to make the rocket actually move up and using translate and rotate within
 transform withn a percentage.
