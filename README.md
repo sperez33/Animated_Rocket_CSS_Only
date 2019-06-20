@@ -34,4 +34,4 @@ it "passes by".
 
 June 20.2019 - 9:41a - added an animation delay for clouds 2 and 3 at -0.8 and -0.4 respectively. I also added an additional
 graphical touch to make the backround change color as the rocket flies using, yet again, the keyframe. @keyframes was
-added the the background within the percentant.
+added the the background within the percentage.
