@@ -1,4 +1,4 @@
-# Animated_Rocket_CSS_Only
+# RSI_Challenge_StephPerez
 A challenge given to me during my internship with RSI
 June 19.2019 - 9:48a - uploaded test file to GitHub
 I pulled this from a tutorial on youtube, I simply added notes as I followed along for a better understanding of the 
